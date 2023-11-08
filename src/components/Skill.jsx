@@ -1,4 +1,5 @@
 import React from "react";
+import { skillText } from "../constants/index";
 
 const Skill = () => {
     return (
@@ -8,27 +9,13 @@ const Skill = () => {
                     <em>나의 도전</em>
                 </h2>
                 <div className="skill__desc">
-                    <div>
-                        <span>1.</span>
-                        <h3>꿈을 설계하고 디자인하다.</h3>
-                        <p>도전할 준비가 되었습니다.</p>
-                    </div>
-                    <div>
-                        <span>2.</span>
-                        <h3>꿈을 설계하고 디자인하다.</h3>
-                        <p>
-                            상상한 무궁무진한 아이디어를 제가 배운 기술로
-                            구현하는 것이 두렵지만 재미있습니다.
-                        </p>
-                    </div>
-                    <div>
-                        <span>3.</span>
-                        <h3>꿈을 설계하고 디자인하다.</h3>
-                        <p>
-                            앞서 나가진 못하더라도 꾸준하게 나아갈 자신이
-                            있습니다.
-                        </p>
-                    </div>
+                    {skillText.map((skill, key) => (
+                        <div key={key}>
+                            <span>{key + 1}</span>
+                            <h3>{skill.title}</h3>
+                            <p>{skill.desc}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { headerNav } from "../constants/index";
 
 const Header = () => {
+    const [show, setShow] = useState(false);
+
+    const toggleMenu = () => {
+        setShow((prevShow) => !prevShow); // true가 들어가면 false를 반납함
+    };
+
     return (
         <div id="header" role="banner">
             <div className="header__inner">
@@ -9,35 +17,26 @@ const Header = () => {
                         portfolio <em>developer</em>
                     </a>
                 </div>
-                <div
-                    className="header__nav"
+                <nav
+                    className={`header__nav ${show ? "show" : ""}`}
                     role="navigation"
                     aria-label="메인 메뉴"
                 >
                     <ul>
-                        <li>
-                            <a href="#intro">intro</a>
-                        </li>
-                        <li>
-                            <a href="#skill">skill</a>
-                        </li>
-                        <li>
-                            <a href="#site">site</a>
-                        </li>
-                        <li>
-                            <a href="#port">portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
+                        {headerNav.map((head, key) => (
+                            <li key={key}>
+                                <a href={head.url}>{head.title}</a>
+                            </li>
+                        ))}
                     </ul>
-                </div>
+                </nav>
                 <div
                     className="header__nav__mobile"
                     id="headerToggle"
                     aria-controls="primary-menu"
-                    aria-expanded="false"
+                    aria-expanded={show ? "true" : "false"}
                     role="button"
+                    onClick={toggleMenu}
                 >
                     <span></span>
                 </div>

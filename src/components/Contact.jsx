@@ -1,5 +1,6 @@
 import React from "react";
-import port01 from "../assets/img/port.png";
+import port from "../assets/img/port.png";
+import { contactText } from "../constants";
 const Contact = () => {
     return (
         <section id="contact">
@@ -20,26 +21,16 @@ const Contact = () => {
                             <div className="left">
                                 <p>CONTACT ME!!</p>
                                 <div>
-                                    <img src={port01} alt="" />
+                                    <img src={port} alt="" />
                                 </div>
                             </div>
                             <div className="right">
-                                <div>
-                                    <p className="top">PHONE</p>
-                                    <p>010.7180.2384</p>
-                                </div>
-                                <div>
-                                    <p className="top">Email</p>
-                                    <p>010.7180.2384</p>
-                                </div>
-                                <div>
-                                    <p className="top">github</p>
-                                    <p>010.7180.2384</p>
-                                </div>
-                                <div>
-                                    <p className="top">Name</p>
-                                    <p>010.7180.2384</p>
-                                </div>
+                                {contactText.map((con, key) => (
+                                    <div key={key}>
+                                        <p className="top">{con.key}</p>
+                                        <p>{con.value}</p>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
