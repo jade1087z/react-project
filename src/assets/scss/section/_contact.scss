@@ -1,0 +1,100 @@
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+.contact__inner {
+    width: 100%;
+    height: 100%;
+    padding: 5vw 1vw 0vw 1vw;
+}
+.contact__title {
+    font-weight: 400;
+    font-family: "Taviraj";
+    color: var(--subBg100);
+    line-height: 2;
+    letter-spacing: 0vw;
+    white-space: nowrap;
+}
+
+.contact__line {
+    width: 100%;
+    display: block;
+}
+
+.contact__line .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--subBg300);
+    margin-bottom: 0.5vw;
+}
+
+.contact__line .line:nth-child(1) {
+    height: 1px;
+}
+.contact__line .line:nth-child(2) {
+    height: 2px;
+}
+.contact__line .line:nth-child(3) {
+    height: 3px;
+}
+.contact__line .line:nth-child(4) {
+    height: 4px;
+}
+.contact__line .line:nth-child(5) {
+    height: 6px;
+}
+.contact__line .line:nth-child(6) {
+    height: 8px;
+}
+.contact__line .line:nth-child(7) {
+    height: 10px;
+}
+
+.contact__line.bottom .line:nth-child(7) {
+    height: 1px;
+}
+.contact__line.bottom .line:nth-child(6) {
+    height: 2px;
+}
+.contact__line.bottom .line:nth-child(5) {
+    height: 3px;
+}
+.contact__line.bottom .line:nth-child(4) {
+    height: 4px;
+}
+.contact__line.bottom .line:nth-child(3) {
+    height: 6px;
+}
+.contact__line.bottom .line:nth-child(2) {
+    height: 8px;
+}
+.contact__line.bottom .line:nth-child(1) {
+    height: 10px;
+}
+
+.contact__text .text {
+    padding: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+.contact__text .left {
+    font-size: 5vh;
+    font-weight: bold;
+    letter-spacing: 0.7vh;
+}
+
+.contact__text .right {
+    padding-top: 13vh;
+    letter-spacing: 0.4vh;
+}
+.contact__text .text .top {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.contact__text p {
+    color: var(--white200);
+    padding-top: 1.3vh;
+}

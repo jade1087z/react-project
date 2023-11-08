@@ -1,0 +1,80 @@
+:root {
+    --mainEng-font: "Montserrat";
+    --mainKor-font: "nanumSquareNeo";
+    --mainNum-font: "GmarketSans";
+
+    --mainBg-color: #fff;
+    --mainFont-color: #c1c1c1;
+
+    --subBg100: #b6b6c9;
+    --subBg200: #c1c1c1;
+    --subBg300: #c1c1c1;
+    --subBg400: #c1c1c1;
+    --subBg500: #c1c1c1;
+    --subBg600: #c1c1c1;
+
+    --white: #fff;
+    --white100: #e8e8e8;
+    --white200: #dddddd;
+    --white300: #c1c1c1;
+    --white400: #b3b3b3;
+    --white500: #a4a4a4;
+    --white600: #969696;
+
+    --black: #000;
+    --black100: #1b1b1b;
+    --black200: #1d1d1d;
+    --black300: #181818;
+    --black400: #4d4c4c;
+    --black500: rgb(66, 63, 63) 575;
+
+    --black600: #8f8f8f;
+    --black700: #aca7a7;
+    --black800: rgb(168, 165, 165);
+    --black900: rgb(214, 212, 212);
+    --black1000: rgb(223, 213, 213);
+
+    --black1100: #808080;
+    --black1200: #ebe8e8;
+    --black1100: #808080;
+
+    --neon-color-puple1: rgba(160, 103, 173, 1);
+    --neon-color-puple2: rgb(125, 74, 136);
+    --neon-color-puple3: rgba(177, 79, 202, 0.788);
+    --neon-color-puple4: rgb(105, 77, 112);
+    --neon-color-puple5: rgb(128, 114, 133);
+    --neon-color-puple6: rgb(138, 123, 143);
+    --neon-color-puple7: rgb(174, 161, 179);
+    --neon-color-puple8: rgb(202, 181, 211);
+    --neon-color-puple9: rgb(214, 178, 230);
+    --neon-color-puple10: rgb(213, 151, 240);
+
+    --neon-color-blue: rgba(070, 163, 210, 1);
+    --neon-color-red: rgba(240, 020, 134, 1);
+    --neon-color-yellow: rgba(251, 194, 044, 1);
+    --neon-color-green: rgba(140, 227, 061, 1);
+
+    --font-color1: #3b3636;
+    --font-color2: #745669;
+
+    /* 기본 폰트 설정 */
+    font-family: var(--mainEng-font), var(--mainKor-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+body {
+    color: var(--black);
+    background-color: var(--mainBg-color);
+    font-family: "NanumSquareNeo";
+}

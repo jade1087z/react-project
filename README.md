@@ -16,6 +16,7 @@
 3. sass 설치 'npm i sass'
 4. lenis 설치 'npm i @studio-freight/lenis'  
    [lenis 사이트] (https://github.com/studio-freight/lenis)
+5. react-router-dom 설치
 
 ## GSAP
 
