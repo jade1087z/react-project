@@ -26,3 +26,7 @@ GreenSock Animation Platform은 웹 애니메이션을 만들기 위한 강력�
 ## LENIS
 
 빠른 스크롤을 지원하는 오픈소스입니다. 메인쓰레드에서 스크롤을 실행하고, 접근성이 좋습니다. 다른 애니메이션 라이브러리들과도 잘 연동됩니다.
+
+## 배포
+
+-   [FIREBASE] (https://react-project-imdoob.web.app)로 배포하였습니다.
