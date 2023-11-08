@@ -29,4 +29,4 @@ GreenSock Animation Platform은 웹 애니메이션을 만들기 위한 강력�
 
 ## 배포
 
--   [FIREBASE] (https://react-project-imdoob.web.app)로 배포하였습니다.
+-   [FIREBASE] (https://react-project-imdoob.web.app) 로 배포하였습니다.
